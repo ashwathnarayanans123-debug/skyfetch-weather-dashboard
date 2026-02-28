@@ -84,3 +84,44 @@ h1 {
     width: 100px;
     height: 100px;
 }
+/* ✅ Style .search-section */
+.search-section {
+    margin-bottom: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;            /* responsive for small screens */
+    justify-content: center;    /* centers items */
+}
+
+/* ✅ Style #city-input */
+#city-input {
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: 2px solid #ddd;
+    flex: 1;
+    font-size: 1rem;
+    min-width: 250px;           /* good for mobile */
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+#city-input:focus {
+    border-color: #3f8cff;      /* highlight color when typing */
+}
+
+/* ✅ Style #search-btn */
+#search-btn {
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #3f8cff, #6a5cff);
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+#search-btn:hover {
+    opacity: 0.9;
+    transform: scale(1.03);
+}
